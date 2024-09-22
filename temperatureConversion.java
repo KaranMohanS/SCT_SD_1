@@ -36,35 +36,40 @@ public class temperatureConversion {
     
         case 3:
             double celsius1;
-            printf("Enter Celsuis");
-            scanf("%lf", &celsius1);
-            printf("CelsiusToKelvin--->%lf", CelsiusToKelvin(celsius1));
+            System.out.println("Enter Celsuis");
+            celsius1=scanner.nextDouble();
+            scanner.nextLine();
+            System.out.println("CelsiusToKelvin--->"+CelsiusToKelvin(celsius1));
             break;
     
         case 4:
             double kelvin;
-            printf("Enter Kelvin");
-            scanf("%lf", &kelvin);
-            printf("KelvinToCelsius--->%lf", KelvinToCelsius(kelvin));
+            System.out.println("Enter Kelvin");
+            kelvin=scanner.nextDouble();
+            scanner.nextLine();
+            System.out.println("KelvinToCelsius--->"+KelvinToCelsius(kelvin));
             break;
     
         case 5:
             double fahrenheit1;
-            printf("Enter Fahrenheid");
-            scanf("%lf", &fahrenheit1);
-            printf("FahrenheitToKelvin--->%lf", FahrenheitToKelvin(fahrenheit1));
+            System.out.println("Enter Fahrenheid");
+            fahrenheit1=scanner.nextDouble();
+            scanner.nextLine();
+            System.out.println("FahrenheitToKelvin--->"+FahrenheitToKelvin(fahrenheit1));
             break;
     
         case 6:
             double kelvin1;
-            printf("Enter Kelvin");
-            scanf("%lf", &kelvin1);
-            printf("KelvinToFahrenheit--->%lf", KelvinToFahrenheit(kelvin1));
+            System.out.println("Enter Kelvin");
+            kelvin1=scanner.nextDouble();
+            scanner.nextLine();
+            System.out.println("KelvinToFahrenheit--->"+KelvinToFahrenheit(kelvin1));
             break;
     
         default:
-            printf("invalied option:%d ", option);
+            System.out.println("invalied option:"+ option);
             break;
+        }
     }
 
     public static double CelsiusToFahrenheit(double celsius) {
