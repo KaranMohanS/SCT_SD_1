@@ -70,6 +70,7 @@ public class temperatureConversion {
             System.out.println("invalied option:"+ option);
             break;
         }
+        scanner.close();
     }
 
     public static double CelsiusToFahrenheit(double celsius) {
